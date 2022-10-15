@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".News_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_next"></ImageButton>
+
+        </LinearLayout>
+        <!-- 상단 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnHomeTitle"
+                style="@style/styleDy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:gravity="center"
+                android:text="dynews"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--회색 실선-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/textView"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:text="태풍 무이파, 中 동해안 상륙…상하이 공항 여객기 모두 취소"
+                            android:textSize="25dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textTitle"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text=" 2022.09.14 21:58
+"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                            <ToggleButton
+                                android:id="@+id/alarmToggle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOff="구독하기"
+                                android:textOn="구독중"
+                                android:layout_marginLeft="165dp"
+                                android:background="#95ffffff"
+                                android:textColor="@color/red"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+                <LinearLayout
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_iv"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="@android:color/transparent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#D0DBEB"
+                            android:src="@drawable/abc5"
+                            />
+
+                        <TextView
+                            android:id="@+id/textTitle2"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="파이낸셜 뉴스" />
+                        <ToggleButton
+                            android:id="@+id/button_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_favorite"
+                            android:checked="false"
+                            android:layout_marginLeft="135dp"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/number7" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="제12호 태풍 '무이파'(MUIFA)와 제13호 태풍 '므르복'(MERBOK)이 한반도에는 큰 영향을 미치지 못할 것으로 관측된 가운데, 제14호 태풍 '난마돌'(NANMADOL)이 새로운 변수로 떠오르고 있다. 13일 기상청에 따르면, 이날 오전 3시 기준 태풍 무이파는 타이완 타이베이 동쪽 약260㎞ 해상에서 시속 8㎞로 북북동진하고 있다. 태풍의 중심기압은 965hPa(헥토파스칼), 강풍반경은 250㎞, 최대풍속은 초속 37m(시속 133㎞)로 '강' 단계다. 사진은 13일 오후 15시30분 북상중인 태풍 '무이파' '무르복' (어스널스쿨 캡처)2022.9.13/뉴스1"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="(서울=뉴스1) 김예슬 기자 = 제12호 태풍 '무이파(MUIFA)'가 14일 중국 동해안에 상륙하며 상하이 공항 2곳의 모든 여객기가 취소됐다고 AFP통신이 관계자를 인용해 보도했다."
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="관영 중국중앙(CC)TV는 태풍 무이파가 이날 오후 7시경 상하이에 상륙할 것으로 예측했다. 또 상하이공항그룹이 태풍의 영향에 따라 푸동국제공항과 훙차오국제공항의 항공편을 조정한 뒤 대중에게 발표할 것이라고 전했다."
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="태풍 무이파는 최대 풍속이 초속 45m에 달한다. 무이파로 인한 예상 강수량은 이날 아침부터 24시간 동안 100∼250㎜다. 저장성에 착륙한 후 시속 20~25㎞로 북서진하면서 강도가 점차 약해질 것으로 관측된다.
+"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="김표향 기자 suzak@hankookilbo.com"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--하단....-->
+
+
+</LinearLayout>

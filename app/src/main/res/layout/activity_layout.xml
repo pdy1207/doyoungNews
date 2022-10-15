@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".News_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_next"></ImageButton>
+
+        </LinearLayout>
+        <!-- 상단 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnHomeTitle"
+                style="@style/styleDy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:gravity="center"
+                android:text="dynews"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--회색 실선-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/textView"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:text="'누가 재생에너지가 더 비싸대?...화석연료 계속 쓰면 1경7000조 버린다'"
+                            android:textSize="25dp" />
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text=" 2022.09.14 21:58
+"
+                        android:textColor="#5F6A7A"
+                        android:textSize="15dp" />
+                    <ToggleButton
+                        android:id="@+id/alarmToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textOff="구독하기"
+                        android:textOn="구독중"
+                        android:layout_marginLeft="165dp"
+                        android:background="#95ffffff"
+                        android:textColor="@color/red"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+                <LinearLayout
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_iv"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="@android:color/transparent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#D0DBEB"
+                            android:src="@drawable/abc2"
+                            />
+
+                        <TextView
+                            android:id="@+id/textTitle2"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="한국일보" />
+
+                        <ToggleButton
+                            android:id="@+id/button_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="175dp"
+                            android:background="@drawable/button_favorite"
+                            android:checked="false"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/number3" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="전 세계가 화석연료를 재생에너지로 전환하면 2050년까지 1경7,000조 원에 달하는 천문학적 비용을 아낄 수 있다는 연구 결과가 나왔다. 녹색에너지 전환 비용이 더 든다는 산업계 일부 반발은 잘못됐다는 주장이다."
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="영국 BBC방송에 따르면, 옥스퍼드대 마틴스쿨 신경제사상연구소는 13일(현지시간) 국제학술지 ‘줄’에 발표한 ‘실증에 근거한 기술 예측 및 에너지 전환’이라는 논문에서 “재생에너지 생산 비용이 감소하고 있기 때문에 친환경 전환은 경제적으로 타당하다”고 결론 내렸다."
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="또 대규모 투자 및 규모의 경제가 다른 유사 기술을 얼마나 저렴하게 만들었는지에 대한 데이터를 활용해 확률적 모델링을 실시한 결과, 재생에너지 가격은 계속 하락할 것으로 전망됐다. 향후 재생에너지가 화석연료보다 가격 면에서 경쟁력이 있을 것이라는 얘기다. 연구진은 재생에너지를 사용한다면 현재 수준으로 화석연료를 계속 사용할 때와 비교해 2050년까지 12조 달러(약 1경6,6698조 원)를 절약할 수 있다고 추산했다.
+"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="김표향 기자 suzak@hankookilbo.com"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--하단....-->
+
+
+</LinearLayout>

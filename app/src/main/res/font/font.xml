@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--메인폰트-->
+    <font
+        android:fontStyle="normal"
+        android:font="@font/maru"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/hyemin"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/bmjua"/>
+</font-family>

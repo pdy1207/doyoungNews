@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".News_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_next"></ImageButton>
+
+        </LinearLayout>
+        <!-- 상단 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnHomeTitle"
+                style="@style/styleDy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:gravity="center"
+                android:text="dynews"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--회색 실선-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/textView"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:text="토트넘 첫 패배... 길어지는 '손흥민의 침묵'
+"
+                            android:textSize="25dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textTitle"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="2022-09-15 13:08
+"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                            <ToggleButton
+                                android:id="@+id/alarmToggle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOff="구독하기"
+                                android:textOn="구독중"
+                                android:layout_marginLeft="160dp"
+                                android:background="#95ffffff"
+                                android:textColor="@color/red"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                    </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+                <LinearLayout
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_iv"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="@android:color/transparent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#D0DBEB"
+                            android:src="@drawable/abc8"
+                            />
+
+                        <TextView
+                            android:id="@+id/textTitle2"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="연합뉴스" />
+                        <ToggleButton
+                            android:id="@+id/button_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_favorite"
+                            android:checked="false"
+                            android:layout_marginLeft="175dp"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/number10" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:gravity="left"
+                            android:text="이규석 기자 = 토트넘(잉글랜드)이 포르투갈 원정으로 펼쳐진 유럽축구연맹(UEFA) 챔피언스리그에서 올 시즌 첫 패배를 당했다. 손흥민은 8경기 연속 침묵에 빠졌다. 챔피언스리그 우승 후보인 바이에른 뮌헨(독일)과 리버풀(잉글랜드)는 각각 승리를 따내는데 성공했다.
+"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:gravity="left"
+                            android:text="토트넘은 14일(이하 한국시간) 포르투갈 리스본의 주제 알발라드에서 열린 스포르팅 리스본(포르투갈)과 2022-23 유럽축구연맹(UEFA) 챔피언스리그 D조 조별리그 2차전에서 0-2로 완패했다.
+"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="이날 경기 전까지 모든 대회를 통틀어 7경기 연속 무패(5승2무)를 이어갔던 토트넘은 시즌 첫 패배를 당했다. 1승1패(승점 3)가 된 토트넘은 2연승을 기록한 스포르팅(승점 6)에 이어 조 2위에 머물렀다.
+"
+                        android:textSize="15sp" />
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="왼쪽 측면 공격수로 선발 출전한 손흥민은 공격 포인트 없이 후반 27분 데얀 클루셉스키와 교체됐다. 올 시즌 출전한 8경기 연속 득점에 실패했다. 지난 시즌 잉글랜드 프리미어리그(EPL)에서 23골을 기록, 득점왕에 올랐던 페이스와는 사뭇 다르다.
+
+"
+                        android:textSize="15sp" />
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="연합뉴스"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--하단....-->
+
+
+</LinearLayout>

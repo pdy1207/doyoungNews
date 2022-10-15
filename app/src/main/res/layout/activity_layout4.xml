@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".News_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_next"></ImageButton>
+
+        </LinearLayout>
+        <!-- 상단 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnHomeTitle"
+                style="@style/styleDy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:gravity="center"
+                android:text="dynews"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--회색 실선-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/textView"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:text="‘용과 같이7 외전 이름을 지운 자’ 2023년 발매 … 용6 이후 키류의 뒷 이야기 공개"
+                            android:textSize="25dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textTitle"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text=" 2022.09.14 22:56
+"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                            <ToggleButton
+                                android:id="@+id/alarmToggle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOff="구독하기"
+                                android:textOn="구독중"
+                                android:layout_marginLeft="160dp"
+                                android:background="#95ffffff"
+                                android:textColor="@color/red"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+                <LinearLayout
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_iv"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="@android:color/transparent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#D0DBEB"
+                            android:src="@drawable/abc4"
+                            />
+
+                        <TextView
+                            android:id="@+id/textTitle2"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="경향게임스" />
+                        <ToggleButton
+                            android:id="@+id/button_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_favorite"
+                            android:checked="false"
+                            android:layout_marginLeft="160dp"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="‘용과 같이6’이후 은퇴한 것으로 알려진 키류가 돌아 온다. ‘용과 같이7’에서 깜짝 게스트로 등장하게 된 사연과, 그 이후 이야기들이 게임으로 담긴다."
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/number4" />
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="▲ ‘용과 같이7 외전 이름을 지운 자’는 액션 장르로 오는 2023년 발매 된다(사진 출처 RGG서밋 2022)
+"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="용과 같이 스튜디오는 14일 RGG서밋 2022를 통해 ‘용과 같이7 외전 이름을 지운 자’를 발표 했다. 이번 시리즈는 ‘용과 같이6’에서 절규와 함께 시리즈를 마무리 지었던 키류의 귀환을 다룬다.
+"
+                            android:textSize="15sp" />
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/number5" />
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="▲ 사찰에서 참선중인 키류. 과거를 떠올리는듯한 표정을 지켜보자 (사진 출처 RGG서밋 2022)
+
+"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="특히 키류는 ‘용과 같이7’에서 거미줄로 향하는 이치반 일행을 맞이해 전투를 치르기도 하는데, 관련 내용의 뒷 이야기까지도 이번 시나리오에서 다루게 될 것으로 기대 된다. 이어 해당 내용들이 ‘용과 같이8’까지 이어질 것으로 보이는 가운데, 키류의 외형이 변하게 된 계기 등이 나올 수 있을지도 지켜봐야 할 부분이다."
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="개발진에 따르면 이번 외전은 액션 장르로 개발중인 게임이다. 기존 용과 같이 시리즈에 비해서 플레이타임은 절반 수준이 될 것이며 대신 마을에 미니게임을 배치하는 것과 같은 즐길거리를 준비하면서 시리즈 전통을 살릴 계획이다."
+                        android:textSize="15sp" />
+
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="200dp"
+                        android:gravity="left"
+                        android:text="‘용과 같이7 외전 이름을 지운 자’는 2023년 발매 된다."
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--하단....-->
+
+
+</LinearLayout>

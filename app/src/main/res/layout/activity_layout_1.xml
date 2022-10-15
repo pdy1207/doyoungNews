@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".News_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_next"></ImageButton>
+
+        </LinearLayout>
+        <!-- 상단 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnHomeTitle"
+                style="@style/styleDy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000046"
+                android:gravity="center"
+                android:text="dynews"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--회색 실선-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/textView"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:text="경찰, 이준석 알선수재 무혐의…“공소시효 지나”"
+                            android:textSize="25dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textTitle"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="2022-09-20 21:07"
+                            android:textColor="#5F6A7A"
+                            android:textSize="15dp" />
+                            <ToggleButton
+                                android:id="@+id/alarmToggle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textOff="구독하기"
+                                android:textOn="구독중"
+                                android:layout_marginLeft="165dp"
+                                android:background="#95ffffff"
+                                android:textColor="@color/red"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+                    </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+                <LinearLayout
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle_iv"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="@android:color/transparent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#D0DBEB"
+                            android:src="@drawable/abc7"
+                            />
+
+                        <TextView
+                            android:id="@+id/textTitle2"
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="한겨레" />
+                        <ToggleButton
+                            android:id="@+id/button_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_favorite"
+                            android:checked="false"
+                            android:layout_marginLeft="200dp"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/news1" />
+                    <TextView
+                        style="@style/styleDy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="이준석 전 대표가 지난 14일 오전 서울 양천구 서울남부지방법원에서 열린 국민의힘 당헌 효력 정지 가처분 심문을 마친 뒤 법원을 나서고 있다. 공동취재사진"
+                        android:textColor="#5F6A7A"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="경찰이 성접대 의혹을 받는 이준석 국민의힘 전 대표와 관련된 여러 고발 사건에서 알선 수재 혐의에 대해서 불송치 결정했다."
+                            android:textSize="15sp" />
+
+                        <TextView
+                            style="@style/styleDy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="200dp"
+                            android:gravity="left"
+                            android:text="서울경찰청 반부패·공공범죄수사대는 20일 이 전 대표의 특정경제범죄가중처벌법상 알선수재 혐의에 대해 불송치 결정을 했다고 밝혔다. 경찰은 공소시효가 지났고, 증거가 불충분하다는 이유로 혐의가 없다고 판단했다."
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/styleDy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="200dp"
+                    android:gravity="left"
+                    android:text="경찰은 2015년 2월16일, 2015년 9월24일 김 대표가 이 전 대표에게 보낸 명절선물에 대해 “범의의 단일성 및 계속성, 시간 장소적 연관성이 있어 포괄일죄 관계에 있다고 보아 공소시효가 남아있다고 볼 여지가 있다”면서도 “수사사항을 종합적으로 검토한 결과, 이 시기 이루어진 금품 공여 및 수수행위에는 공무원의 직무에 관해 어떠한 알선, 청탁이나 대가관계가 있었다거나 피의자에게 알선수재의 고의가 있었다고 보기 어렵고, 증거가 부족하다”고 결론 내렸다."
+                    android:textSize="15sp" />
+
+                <TextView
+                    style="@style/styleDy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="200dp"
+                    android:gravity="left"
+                    android:text="서혜미 기자 ham@hani.co.kr"
+                    android:textSize="15sp" />
+            </LinearLayout>
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D0DBEB" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0DBEB"/>
+    <!--하단....-->
+
+
+</LinearLayout>

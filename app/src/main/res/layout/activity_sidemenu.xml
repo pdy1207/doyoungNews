@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/main_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1d2671"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="반갑습니다"
+
+            android:textColor="#90ffffff"
+            android:textSize="14dp"></TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/genter_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/pro"
+            app:civ_border_color="@color/transparent"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/NickName"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="85dp"
+            android:text="뉴스와 나를 잇다"
+            android:textColor="#90ffffff"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:text="데일리뉴스와 함께 활기찬 하루 시작하세요"
+            android:textColor="#90ffffff"
+            android:textSize="14dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="223dp"
+            app:srcCompat="@drawable/sr_home"></ImageView>
+
+        <TextView
+            android:id="@+id/Home"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="220dp"
+            android:onClick="OnClick"
+            android:text="Home"
+            android:textColor="#90ffffff"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="270dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="290dp"
+            app:srcCompat="@drawable/ic_account3"></ImageView>
+
+        <TextView
+            android:id="@+id/Popular"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="290dp"
+            android:onClick="OnClick"
+            android:text="Popular News"
+            android:textColor="#90ffffff"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="340dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="363dp"
+            app:srcCompat="@drawable/sr_tnwjd"></ImageView>
+
+        <TextView
+            android:id="@+id/Edit"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="365dp"
+            android:onClick="OnClick"
+            android:text="Member edit"
+            android:textColor="#90ffffff"></TextView>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="505dp"
+            app:srcCompat="@drawable/sr_ehdna2"></ImageView>
+
+        <TextView
+            android:id="@+id/Help"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="500dp"
+            android:onClick="OnClick"
+            android:text="Help"
+            android:textColor="#90ffffff"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="480dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="410dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="432dp"
+            app:srcCompat="@drawable/ic_search3"></ImageView>
+
+        <TextView
+            android:id="@+id/Search"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="430dp"
+            android:onClick="OnClick"
+            android:textColor="#90ffffff"
+            android:text="Search"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="550dp"
+            android:background="#80ffffff"></LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="580dp"
+            app:srcCompat="@drawable/ic_langue"></ImageView>
+
+        <TextView
+            android:id="@+id/tra"
+            style="@style/styleDy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="575dp"
+            android:onClick="OnClick"
+            android:text="번역"
+            android:textColor="#90ffffff"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="620dp"
+            android:background="#80ffffff"></LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

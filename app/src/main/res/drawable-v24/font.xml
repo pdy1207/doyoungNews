@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:angle="90"
+        android:endColor="#000c40"
+        android:startColor="#f0f2f0" />
+
+    <!--    android:angle="0"-->
+    <!-- angle 0 으로 맞추면 가로 90 은 세로-->
+
+</shape>
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <gradient
+            android:angle="30"
+            android:type="linear"
+            android:startColor="#514a9d"
+        android:endColor="#24c6dc"/>
+    &lt;!&ndash;    <corners
+            android:radius="20dp"/>&ndash;&gt;
+    </shape>
+
+        어느 방향으로 그라데이션 효과를 넣을지 정할 수 있다
+        시작 색
+        가운데 색 android:centerColor="#ffffff"
+        끝 색
+        끝부분을 둥글게 할 수-->

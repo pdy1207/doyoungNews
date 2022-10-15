@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/G U C C I/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/android_study/DoDo/app/src/main/res/menu/activity_main_drawer.xml" value="0.3255208333333333" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/button_favorite.xml" value="0.1" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/dl_background.xml" value="0.201" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/font.xml" value="0.185" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/font2.xml" value="0.22" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/ic_circle.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/ic_favorite.xml" value="0.1925" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/ic_favorite_border.xml" value="0.1925" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/back.xml" value="0.16" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/checkbox.xml" value="0.1825" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/custom_ripple_effect.xml" value="0.2095" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/custom_ripple_effect2.xml" value="0.22" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/font.xml" value="0.188" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/gradient.xml" value="0.198" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/drawable/ic_launcher_background.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/font/font.xml" value="0.28020833333333334" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/abv.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_NewsList.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_abc.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_ex11_list_item.xml" value="0.19114583333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_ex11_list_view_ex.xml" value="0.1875" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_ex11_listview.xml" value="0.19114583333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_inter.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_intro.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_join_ok.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout2.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout3.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout4.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout5.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout6.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout7.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout8.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout9.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_1.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_10.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_2.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_3.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_4.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_5.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_6.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_7.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_8.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_layout_9.xml" value="0.19444444444444445" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_main2.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_news.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_news_list.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_recycler_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_setting.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_sidemenu.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_test2.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/activity_viewpage_main.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/editok_dialog.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/ex11_listview_list_item.xml" value="0.1640625" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/frame_1.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/frame_2.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/frame_3.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/frame_4.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/item.xml" value="0.23802083333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/item_movie.xml" value="0.16770833333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/joinok_dialog.xml" value="0.152" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_ex20_viewpager2.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_ex9_sqlite_edit.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_ex9_sqlite_join.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_ex9_sqlite_login.xml" value="0.176" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_ex9_sqlite_main.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_sqlite_edit.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_sqlite_join.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_sqlite_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_sqlite_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_viewpager2.xml" value="0.25364583333333335" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/layout_webview_full.xml" value="0.23802083333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/loginplss.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/main.xml" value="0.3255208333333333" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/nav_header_main.xml" value="0.3255208333333333" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/profile_dialog.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/profile_login.xml" value="0.20820863616930313" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/row_news.xml" value="0.264" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/thank.xml" value="0.2" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/layout/www.xml" value="0.23802083333333332" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/menu/activity_main_drawer.xml" value="0.3255208333333333" />
+        <entry key="..\:/android_study/DyNews/app/src/main/res/menu/main.xml" value="0.20729166666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

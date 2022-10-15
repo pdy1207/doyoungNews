@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/font2"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                app:lottie_fileName="edit.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#80ffffff"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일 주소를 입력해주세요"
+                    style="@style/styleDy"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/bmjua"
+                    android:textColor="#99000000"
+                    android:textSize="20dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="이메일을 입력해주세요."
+                        style="@style/styleDy"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#90ffffff"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/btnEditFind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bmjua"
+                        android:background="@drawable/custom_ripple_effect"
+                        style="@style/styleDy"
+                        android:textSize="20dp"
+                        android:textColor="#99000000"
+                        android:text="찾기" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="변경하실 닉네임을 입력해주세요."
+                    style="@style/styleDy"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/bmjua"
+                    android:textColor="#99000000"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="닉네임을 입력해주세요."
+                        style="@style/styleDy"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#90ffffff"
+                        android:inputType="textPersonName" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정하실 비밀번호 입력해주세요."
+                android:layout_margin="5dp"
+                style="@style/styleDy"
+                android:fontFamily="@font/bmjua"
+                android:textColor="#99000000"
+                android:textSize="20dp" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                    <EditText
+                    android:id="@+id/etPw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="비밀번호를 입력해주세요."
+                    style="@style/styleDy"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#90ffffff"
+                    android:inputType="textPersonName" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="휴대폰 번호 입니다"
+                    style="@style/styleDy"
+                    android:fontFamily="@font/bmjua"
+                    android:textColor="#99000000"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="휴대폰 번호를 입력해주세요."
+                        style="@style/styleDy"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="#90ffffff"
+                        android:inputType="textPersonName" />
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/styleDy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_ripple_effect"
+        android:fontFamily="@font/bmjua"
+        android:text="수정완료"
+        android:textColor="#99000000"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp" />
+
+</LinearLayout>

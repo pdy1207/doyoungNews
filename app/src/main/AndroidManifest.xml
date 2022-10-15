@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dynews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_pro"
+        android:roundIcon="@drawable/logo_pro"
+        android:label="DYN"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DyNews"
+        tools:targetApi="31">
+       <!-- <activity
+            android:name=".test2"/>  일부 테스트 작업 -->
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".News_List" /> <!-- 검색기능 넘어가기 -->
+        <activity
+            android:name=".NewsRecyclerItem"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true" />
+        <activity android:name=".layoutall.layout" />
+        <activity android:name=".layoutall.layout2" />
+        <activity android:name=".layoutall.layout3" />
+        <activity android:name=".layoutall.layout4" />
+        <activity android:name=".layoutall.layout5" />
+        <activity android:name=".layoutall.layout6" />
+        <activity android:name=".layoutall.layout7" />
+        <activity android:name=".layoutall.layout8" />
+        <activity android:name=".layoutall.layout9" />
+        <activity android:name=".layoutall.layout_1" />
+        <activity android:name=".layoutall.layout_2" />
+        <activity android:name=".layoutall.layout_3" />
+        <activity android:name=".layoutall.layout_4" />
+        <activity android:name=".layoutall.layout_5" />
+        <activity android:name=".layoutall.layout_6" />
+        <activity android:name=".layoutall.layout_7" />
+        <activity android:name=".layoutall.layout_8" />
+        <activity android:name=".layoutall.layout_9" />
+        <activity android:name=".layoutall.layout_10" />
+        <activity android:name=".sql.SQLiteExJoin" />
+        <activity android:name=".sql.SQLiteExLogin" />
+        <activity android:name=".sql.SQLiteExEdit" />
+        <activity android:name=".Papago" />
+    </application>
+
+</manifest>
